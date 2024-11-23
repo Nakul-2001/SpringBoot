@@ -1,9 +1,17 @@
 package com.sharma.nakul;
 
-import org.springframework.context.annotation.Bean;
 public class MyFirstClass {
 
-    public void sayHello() {
-        System.out.println("Hello");
+    private final String firstName;
+    private final String lastName;
+
+    public MyFirstClass(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
+
+    public String sayHello() {
+        return "Hello " + firstName + " " + lastName;
+    }
+    
 }
