@@ -62,13 +62,23 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //
 //}
 
+//@SpringBootApplication
+//public class NakulApplication {
+//
+//	public static void main(String[] args) {
+//		var ctx = SpringApplication.run(NakulApplication.class, args);
+//		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
+//		myFirstService.hello();
+//	}
+//
+//}
+
 @SpringBootApplication
 public class NakulApplication {
 
 	public static void main(String[] args) {
-		var ctx = SpringApplication.run(NakulApplication.class, args);
-		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
-		myFirstService.hello();
+		SpringApplication.run(NakulApplication.class, args);
 	}
 
 }
+
